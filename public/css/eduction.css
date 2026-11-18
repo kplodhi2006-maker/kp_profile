@@ -1,0 +1,376 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #070f1d;
+
+    color: #ffffff;
+
+    min-height: 100vh;
+}
+
+
+/* =========================
+   EDUCATION SECTION
+========================= */
+
+.education-section {
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 80px 40px;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.education-heading {
+    margin-bottom: 60px;
+}
+
+.small-heading {
+    color: #00c8ff;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+}
+
+.education-heading h1 {
+    font-size: 64px;
+
+    font-weight: 800;
+
+    line-height: 1.1;
+}
+
+.education-heading h1 span {
+    color: #00c8ff;
+}
+
+.heading-description {
+    color: #9caaba;
+
+    font-size: 16px;
+
+    margin-top: 18px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   EDUCATION CONTAINER
+========================= */
+
+.education-container {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+}
+
+
+/* =========================
+   EDUCATION CARD
+========================= */
+
+.education-card {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 30px;
+
+    padding: 32px;
+
+    background: #0b1626;
+
+    border: 1px solid #1d3047;
+
+    border-radius: 16px;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Card Hover */
+
+.education-card:hover {
+    border-color: #00c8ff;
+
+    transform: translateX(8px);
+
+    box-shadow:
+        0 15px 40px rgba(0, 200, 255, 0.08);
+}
+
+
+/* =========================
+   CARD NUMBER
+========================= */
+
+.card-number {
+    width: 65px;
+
+    height: 65px;
+
+    min-width: 65px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #10263c;
+
+    color: #00c8ff;
+
+    border-radius: 12px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   CARD CONTENT
+========================= */
+
+.card-content {
+    flex: 1;
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+.education-status {
+    display: inline-block;
+
+    color: #00c8ff;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.card-content h2 {
+    font-size: 24px;
+
+    line-height: 1.4;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   COLLEGE / SCHOOL
+========================= */
+
+.card-content h3 {
+    color: #e0e7ef;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   LOCATION
+========================= */
+
+.location {
+    color: #9caaba;
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.description {
+    color: #aeb9c8;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    max-width: 750px;
+}
+
+
+/* =========================
+   PERCENTAGE
+========================= */
+
+.percentage {
+    display: inline-block;
+
+    margin-top: 18px;
+
+    padding: 7px 16px;
+
+    background: #071d2d;
+
+    color: #00c8ff;
+
+    border: 1px solid #12354a;
+
+    border-radius: 20px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   HOVER EFFECT
+========================= */
+
+.education-card:hover .card-number {
+    background: #00c8ff;
+
+    color: #07101d;
+}
+
+.education-card:hover .percentage {
+    border-color: #00c8ff;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 800px) {
+
+    .education-section {
+        padding: 60px 25px;
+    }
+
+    .education-heading h1 {
+        font-size: 52px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .education-section {
+        padding: 45px 18px;
+    }
+
+
+    .education-heading {
+        margin-bottom: 40px;
+    }
+
+
+    .small-heading {
+        font-size: 12px;
+    }
+
+
+    .education-heading h1 {
+        font-size: 42px;
+    }
+
+
+    .heading-description {
+        font-size: 14px;
+    }
+
+
+    .education-card {
+        gap: 18px;
+
+        padding: 22px;
+    }
+
+
+    .card-number {
+        width: 50px;
+
+        height: 50px;
+
+        min-width: 50px;
+
+        font-size: 16px;
+    }
+
+
+    .education-status {
+        font-size: 10px;
+    }
+
+
+    .card-content h2 {
+        font-size: 18px;
+    }
+
+
+    .card-content h3 {
+        font-size: 15px;
+    }
+
+
+    .location {
+        font-size: 13px;
+    }
+
+
+    .description {
+        font-size: 14px;
+    }
+
+}
